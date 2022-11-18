@@ -423,6 +423,9 @@ button:hover {
   padding-block: 5.3333333333rem;
   text-align: center;
   background-color: #1b262f;
+  background-image: url("../../../assets/shared/desktop/bg-pattern-circle.svg");
+  background-repeat: no-repeat;
+  background-position: top -33.3333333333rem center;
 }
 .clients__companies {
   display: grid;
@@ -461,6 +464,7 @@ button:hover {
 @media screen and (min-width: 46.6666666667rem) {
   .clients {
     padding-inline: 2.6113333333rem;
+    background-position: top -32rem center;
   }
   .clients__companies {
     grid-template-columns: repeat(3, 1fr);
@@ -479,6 +483,7 @@ button:hover {
     padding-inline: 11rem;
     display: flex;
     gap: 6.6666666667rem;
+    background-position: top -23.3333333333rem left -14.6666666667rem;
   }
   .clients__companies {
     -webkit-padding-after: 0;
@@ -571,8 +576,11 @@ button:hover {
     gap: 6.6666666667rem;
     background-image: url("../../../assets/shared/desktop/bg-pattern-circle.svg");
     background-repeat: no-repeat;
-    background-position: center right -14.6666666667rem;
-    background-size: 37.3333333333rem;
+    background-position: center right -21.3333333333rem;
+    background-size: 50rem;
+  }
+  .simple-ui img {
+    width: 37rem;
   }
   .simple-ui__content {
     margin-top: -1.3333333333rem;
@@ -615,6 +623,8 @@ button:hover {
 }
 @media screen and (min-width: 68.2666666667rem) {
   .features {
+    -webkit-padding-before: 0;
+            padding-block-start: 0;
     padding-inline: 11rem;
   }
 }/*# sourceMappingURL=main.css.map */

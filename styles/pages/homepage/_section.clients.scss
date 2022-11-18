@@ -6,6 +6,9 @@
   padding-block: rem(80);
   text-align: center;
   background-color: $mirage-blue;
+  background-image: url('../../../assets/shared/desktop/bg-pattern-circle.svg');
+  background-repeat: no-repeat;
+  background-position: top rem(-500) center;
 
   &__companies {
     display: grid;
@@ -49,6 +52,7 @@
 @media screen and (min-width: rem(700)) {
   .clients {
     padding-inline: $tablet-padding-inline;
+    background-position: top rem(-480) center;
 
     &__companies {
       grid-template-columns: repeat(3, 1fr);
@@ -69,6 +73,7 @@
     padding-inline: $desktop-padding-inline;
     display: flex;
     gap: rem(100);
+    background-position: top rem(-350) left rem(-220);
 
     &__companies {
       padding-block-end: 0;

@@ -39,9 +39,11 @@
 
     background-image: url('../../../assets/shared/desktop/bg-pattern-circle.svg');
     background-repeat: no-repeat;
-    background-position: center right rem(-220);
-    background-size: rem(560);
-
+    background-position: center right rem(-320);
+    background-size: rem(750);
+    img {
+      width: rem(555);
+    }
     &__content {
       margin-top: rem(-20);
       order: 1;

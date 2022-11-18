@@ -32,12 +32,11 @@
   .features {
     padding-inline: $tablet-padding-inline;
     flex-direction: row;
-    // display: flex;
-    // gap: rem(40);
   }
 }
 @media screen and (min-width: rem(1024)) {
   .features {
+    padding-block-start: 0;
     padding-inline: $desktop-padding-inline;
   }
 }
