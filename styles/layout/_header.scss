@@ -1,0 +1,33 @@
+@use '../base/' as *;
+@use '../abstracts/' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-start: rem(41);
+  padding-inline: $mobile-padding-inline;
+
+  &__toggle-menu {
+    width: rem(40);
+    aspect-ratio: 1;
+    background-image: url('../../assets/shared/mobile/menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__navigation {
+    width: 100%;
+    display: none;
+  }
+  &__menu {
+    display: flex;
+    gap: rem(40);
+  }
+}
