@@ -1,0 +1,83 @@
+@use '../../base/' as *;
+@use '../../abstracts/' as *;
+
+.clients {
+  padding-inline: $mobile-padding-inline;
+  padding-block: rem(80);
+  text-align: center;
+  background-color: $mirage-blue;
+
+  &__companies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(39);
+    justify-items: center;
+    padding-block-end: rem(56);
+
+    img {
+      width: rem(120);
+    }
+  }
+
+  &__title {
+    font-size: rem(32);
+    line-height: rem(36);
+    letter-spacing: rem(-0.25);
+    color: $water-white;
+  }
+
+  &__description {
+    padding-block: rem(16) rem(60);
+    color: $water-white;
+  }
+
+  &__about-us {
+    padding: rem(15) rem(25);
+    border: rem(2) solid $water-white;
+    border-radius: rem(25);
+    font-weight: 700;
+    color: $water-white;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: $water-white;
+      color: $mirage-blue;
+    }
+  }
+}
+
+@media screen and (min-width: rem(700)) {
+  .clients {
+    padding-inline: $tablet-padding-inline;
+
+    &__companies {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__title {
+      font-size: rem(48);
+      line-height: rem(56);
+      letter-spacing: rem(-0.37);
+    }
+    &__description {
+      padding-block: rem(24) rem(32);
+    }
+  }
+}
+@media screen and (min-width: rem(1024)) {
+  .clients {
+    padding-inline: $desktop-padding-inline;
+    display: flex;
+    gap: rem(100);
+
+    &__companies {
+      padding-block-end: 0;
+      order: 2;
+      align-content: center;
+    }
+
+    &__content {
+      text-align: left;
+    }
+  }
+}

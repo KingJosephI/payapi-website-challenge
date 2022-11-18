@@ -34,6 +34,7 @@
 
     input {
       margin-bottom: rem(15);
+      outline: none;
 
       &::placeholder {
         font-weight: 700;
@@ -45,6 +46,11 @@
       background-color: $dark-pink;
       color: $water-white;
       font-weight: 700;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $charm-pink;
+      }
     }
 
     + div {
@@ -61,6 +67,7 @@
 @media screen and (min-width: rem(700)) {
   .hero {
     padding-block-end: rem(100);
+    padding-inline: $tablet-padding-inline;
 
     &__title {
       font-size: rem(48);
