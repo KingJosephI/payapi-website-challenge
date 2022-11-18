@@ -1,0 +1,78 @@
+@use '../base/' as *;
+@use '../abstracts/' as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(40);
+  text-align: center;
+  background-color: $mirage-blue;
+  padding-block: rem(42) rem(53);
+  margin-top: rem(80);
+  background-image: url('../../assets/shared/desktop/bg-pattern-circle.svg');
+  background-repeat: no-repeat;
+  background-position: bottom rem(-400) center;
+  background-size: rem(600);
+  padding-inline: $mobile-padding-inline;
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: rem(31);
+  }
+
+  &__link {
+    font-size: rem(15);
+    font-weight: 700;
+    color: $san-juan-blue-light;
+
+    &:hover {
+      color: $water-white;
+    }
+  }
+
+  img {
+    width: rem(135);
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: rem(24);
+
+    i {
+      font-size: rem(24);
+      color: $water-white;
+
+      &:hover {
+        cursor: pointer;
+        color: $charm-pink;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: rem(700)) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: $tablet-padding-inline;
+    padding-block: rem(44) rem(40);
+    background-position: bottom rem(-400) right rem(-200);
+
+    &__menu {
+      flex-direction: row;
+    }
+  }
+}
+
+@media screen and (min-width: rem(1024)) {
+  .footer {
+    padding-inline: $desktop-padding-inline;
+    justify-content: start;
+    .social-media {
+      margin-left: auto;
+    }
+  }
+}

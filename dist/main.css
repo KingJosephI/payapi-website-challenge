@@ -225,6 +225,72 @@ button:hover {
             padding-block-end: 0;
   }
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.6666666667rem;
+  text-align: center;
+  background-color: #1b262f;
+  padding-block: 2.8rem 3.5333333333rem;
+  margin-top: 5.3333333333rem;
+  background-image: url("../../assets/shared/desktop/bg-pattern-circle.svg");
+  background-repeat: no-repeat;
+  background-position: bottom -26.6666666667rem center;
+  background-size: 40rem;
+  padding-inline: 1.6666666667rem;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2.0666666667rem;
+}
+.footer__link {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6c8294;
+}
+.footer__link:hover {
+  color: #fbfcfe;
+}
+.footer img {
+  width: 9rem;
+}
+.footer .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+}
+.footer .social-media i {
+  font-size: 1.6rem;
+  color: #fbfcfe;
+}
+.footer .social-media i:hover {
+  cursor: pointer;
+  color: #da6d97;
+}
+
+@media screen and (min-width: 46.6666666667rem) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 2.6113333333rem;
+    padding-block: 2.9333333333rem 2.6666666667rem;
+    background-position: bottom -26.6666666667rem right -13.3333333333rem;
+  }
+  .footer__menu {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 68.2666666667rem) {
+  .footer {
+    padding-inline: 11rem;
+    justify-content: start;
+  }
+  .footer .social-media {
+    margin-left: auto;
+  }
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -496,10 +562,15 @@ button:hover {
 @media screen and (min-width: 68.2666666667rem) {
   .simple-ui {
     padding-inline: 11rem;
+    padding-block: 6.6666666667rem;
     text-align: left;
     display: flex;
     align-items: center;
     gap: 6.6666666667rem;
+    background-image: url("../../../assets/shared/desktop/bg-pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: center right -13.3333333333rem;
+    background-size: 36.6666666667rem;
   }
   .simple-ui__content {
     margin-top: -1.3333333333rem;
