@@ -1,0 +1,58 @@
+@use '../../base/' as *;
+@use '../../abstracts/' as *;
+
+.easy-implement {
+  padding-inline: $mobile-padding-inline;
+  padding-block: rem(80);
+  text-align: center;
+
+  &__title {
+    font-size: rem(32);
+    line-height: rem(36);
+    letter-spacing: rem(-0.25);
+    padding-bottom: rem(24);
+  }
+
+  img {
+    margin-right: rem(-40);
+    max-width: rem(445);
+  }
+}
+
+@media screen and (min-width: rem(700)) {
+  .easy-implement {
+    padding-inline: $tablet-padding-inline;
+    padding-block: rem(100);
+
+    &__title {
+      font-size: rem(48);
+      line-height: rem(56);
+      letter-spacing: rem(-0.37);
+    }
+  }
+}
+@media screen and (min-width: rem(1024)) {
+  .easy-implement {
+    padding-inline: $desktop-padding-inline;
+    // padding-block: rem(150);
+    padding-block: rem(50);
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+    gap: rem(100);
+
+    &__content {
+      margin-top: rem(-20);
+    }
+    &__description {
+      line-height: rem(28);
+      // width: rem(450);
+    }
+
+    img {
+      width: rem(445);
+      margin-right: 0;
+    }
+  }
+}

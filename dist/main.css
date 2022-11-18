@@ -332,4 +332,97 @@ p {
   .clients__content {
     text-align: left;
   }
+}
+.easy-implement {
+  padding-inline: 1.6666666667rem;
+  padding-block: 5.3333333333rem;
+  text-align: center;
+}
+.easy-implement__title {
+  font-size: 2.1333333333rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.0166666667rem;
+  padding-bottom: 1.6rem;
+}
+.easy-implement img {
+  margin-right: -2.6666666667rem;
+  max-width: 29.6666666667rem;
+}
+
+@media screen and (min-width: 46.6666666667rem) {
+  .easy-implement {
+    padding-inline: 2.6113333333rem;
+    padding-block: 6.6666666667rem;
+  }
+  .easy-implement__title {
+    font-size: 3.2rem;
+    line-height: 3.7333333333rem;
+    letter-spacing: -0.0246666667rem;
+  }
+}
+@media screen and (min-width: 68.2666666667rem) {
+  .easy-implement {
+    padding-inline: 11rem;
+    padding-block: 3.3333333333rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 6.6666666667rem;
+  }
+  .easy-implement__content {
+    margin-top: -1.3333333333rem;
+  }
+  .easy-implement__description {
+    line-height: 1.8666666667rem;
+  }
+  .easy-implement img {
+    width: 29.6666666667rem;
+    margin-right: 0;
+  }
+}
+.simple-ui {
+  padding-inline: 1.6666666667rem;
+  text-align: center;
+}
+.simple-ui__title {
+  font-size: 2.1333333333rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.0166666667rem;
+  padding-bottom: 1.6rem;
+}
+.simple-ui img {
+  max-width: 37rem;
+}
+
+@media screen and (min-width: 46.6666666667rem) {
+  .simple-ui {
+    padding-inline: 2.6113333333rem;
+  }
+  .simple-ui__title {
+    font-size: 3.2rem;
+    line-height: 3.7333333333rem;
+    letter-spacing: -0.0246666667rem;
+  }
+}
+@media screen and (min-width: 68.2666666667rem) {
+  .simple-ui {
+    padding-inline: 11rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 6.6666666667rem;
+  }
+  .simple-ui__content {
+    margin-top: -1.3333333333rem;
+    order: 1;
+  }
+  .simple-ui__illustration {
+    order: 2;
+  }
+  .simple-ui__description {
+    line-height: 1.8666666667rem;
+  }
+}
+.features {
+  padding-block: 5.3333333333rem;
 }/*# sourceMappingURL=main.css.map */
