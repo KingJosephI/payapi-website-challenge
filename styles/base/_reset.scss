@@ -18,6 +18,9 @@ body {
   background-repeat: no-repeat;
   background-position: top rem(-400) center;
 
+  max-width: rem(1440);
+  margin: 0 auto;
+
   @media screen and (min-width: rem(700)) and (max-width: rem(1023)) {
     background-size: rem(1000);
     background-position: top rem(-500) center;

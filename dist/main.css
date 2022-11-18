@@ -15,6 +15,8 @@ body {
   background-image: url("../../assets/shared/desktop/bg-pattern-circle.svg");
   background-repeat: no-repeat;
   background-position: top -26.6666666667rem center;
+  max-width: 96rem;
+  margin: 0 auto;
 }
 @media screen and (min-width: 46.6666666667rem) and (max-width: 68.2rem) {
   body {
