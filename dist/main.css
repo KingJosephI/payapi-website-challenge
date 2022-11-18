@@ -139,6 +139,92 @@ p {
     padding-inline: 11rem;
   }
 }
+.form-section {
+  padding-inline: 1.6666666667rem;
+  text-align: center;
+}
+.form-section__title {
+  font-size: 2.1333333333rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.0166666667rem;
+  -webkit-padding-after: 2.1333333333rem;
+          padding-block-end: 2.1333333333rem;
+}
+
+form > * {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: none;
+  font-size: 1rem;
+}
+
+input {
+  margin-bottom: 1rem;
+  outline: none;
+}
+input::-moz-placeholder {
+  font-weight: 700;
+  color: #a7b4bf;
+}
+input:-ms-input-placeholder {
+  font-weight: 700;
+  color: #a7b4bf;
+}
+input::placeholder {
+  font-weight: 700;
+  color: #a7b4bf;
+}
+
+button {
+  background-color: #ba4270;
+  color: #fbfcfe;
+  font-weight: 700;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #da6d97;
+}
+
+@media screen and (min-width: 46.6666666667rem) {
+  .form-section {
+    padding-inline: 2.6113333333rem;
+    margin: 0 auto;
+  }
+  .form-section__title {
+    font-size: 3.2rem;
+    line-height: 3.7333333333rem;
+    letter-spacing: -0.038rem;
+    font-weight: normal;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  form input {
+    margin-bottom: 0;
+    width: 26.6666666667rem;
+  }
+  form button {
+    margin-left: -6.6666666667rem;
+    align-self: flex-start;
+    width: 13.3333333333rem;
+  }
+}
+@media screen and (min-width: 68.2666666667rem) {
+  .form-section {
+    padding-inline: 11rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-section__title {
+    -webkit-padding-after: 0;
+            padding-block-end: 0;
+  }
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -253,6 +339,9 @@ p {
     line-height: 4.8rem;
     letter-spacing: -0.0366666667rem;
     text-align: left;
+  }
+  .hero__form {
+    justify-content: start;
   }
   .hero__form input {
     width: 23.3333333333rem;
@@ -425,4 +514,34 @@ p {
 }
 .features {
   padding-block: 5.3333333333rem;
+  padding-inline: 1.6666666667rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6666666667rem;
+}
+.features__card img {
+  max-width: 7.0666666667rem;
+}
+.features__title {
+  font-size: 1.2rem;
+  line-height: 1.6666666667rem;
+  letter-spacing: -0.0093333333rem;
+  padding-block: 2.1333333333rem 1.0666666667rem;
+}
+.features__description {
+  font-size: 1rem;
+  line-height: 1.6666666667rem;
+}
+
+@media screen and (min-width: 46.6666666667rem) {
+  .features {
+    padding-inline: 2.6113333333rem;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 68.2666666667rem) {
+  .features {
+    padding-inline: 11rem;
+  }
 }/*# sourceMappingURL=main.css.map */

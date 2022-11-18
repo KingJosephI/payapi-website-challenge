@@ -119,6 +119,7 @@
     }
 
     &__form {
+      justify-content: start;
       input {
         width: rem(350);
       }

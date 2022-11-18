@@ -1,0 +1,88 @@
+@use '../base/' as *;
+@use '../abstracts/' as *;
+
+.form-section {
+  padding-inline: $mobile-padding-inline;
+  text-align: center;
+
+  &__title {
+    font-size: rem(32);
+    line-height: rem(36);
+    letter-spacing: rem(-0.25);
+    padding-block-end: rem(32);
+  }
+}
+
+form > * {
+  display: block;
+  width: 100%;
+  padding: rem(15) rem(30);
+  border-radius: rem(30);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: none;
+  font-size: rem(15);
+}
+
+input {
+  margin-bottom: rem(15);
+  outline: none;
+
+  &::placeholder {
+    font-weight: 700;
+    color: lighten($san-juan-blue-light, 20%);
+  }
+}
+
+button {
+  background-color: $dark-pink;
+  color: $water-white;
+  font-weight: 700;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $charm-pink;
+  }
+}
+
+@media screen and (min-width: rem(700)) {
+  .form-section {
+    padding-inline: $tablet-padding-inline;
+    margin: 0 auto;
+
+    &__title {
+      font-size: rem(48);
+      line-height: rem(56);
+      letter-spacing: rem(-0.57);
+      font-weight: normal;
+    }
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    input {
+      margin-bottom: 0;
+      width: rem(400);
+    }
+
+    button {
+      margin-left: rem(-100);
+      align-self: flex-start;
+      width: rem(200);
+    }
+  }
+}
+
+@media screen and (min-width: rem(1024)) {
+  .form-section {
+    padding-inline: $desktop-padding-inline;
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+      padding-block-end: 0;
+    }
+  }
+}
