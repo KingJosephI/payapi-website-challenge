@@ -1,5 +1,5 @@
 @mixin new-background-image($url, $position) {
-  background-image: $url;
+  background-image: url($url);
   background-position: $position;
   background-repeat: no-repeat;
 }

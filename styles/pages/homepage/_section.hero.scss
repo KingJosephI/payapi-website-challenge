@@ -5,4 +5,119 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-inline: $mobile-padding-inline;
+  text-align: center;
+  padding-block-end: rem(80);
+
+  &__title {
+    font-family: 'DM Serif Display', serif;
+    font-size: rem(32);
+    line-height: rem(36);
+    letter-spacing: rem(-0.25);
+    font-weight: normal;
+    color: $san-juan-blue;
+    text-align: center;
+    width: rem(320);
+  }
+
+  &__form {
+    padding-block: rem(25) rem(10);
+    > * {
+      display: block;
+      width: 100%;
+      padding: rem(15) rem(30);
+      border-radius: rem(30);
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border: none;
+      font-size: rem(15);
+    }
+
+    input {
+      margin-bottom: rem(15);
+
+      &::placeholder {
+        font-weight: 700;
+        color: lighten($san-juan-blue-light, 20%);
+      }
+    }
+
+    button {
+      background-color: $dark-pink;
+      color: $water-white;
+      font-weight: 700;
+    }
+
+    + div {
+      color: $san-juan-blue-light;
+    }
+  }
+
+  &__contact-link {
+    font-weight: 700;
+    color: $san-juan-blue;
+  }
+}
+
+@media screen and (min-width: rem(700)) {
+  .hero {
+    padding-block-end: rem(100);
+
+    &__title {
+      font-size: rem(48);
+      line-height: rem(56);
+      letter-spacing: rem(-0.37);
+      width: rem(573);
+    }
+
+    &__form {
+      display: flex;
+      > * {
+        width: fit-content;
+      }
+      input {
+        margin-bottom: rem(0);
+        width: rem(500);
+      }
+
+      button {
+        margin-left: rem(-100);
+      }
+    }
+  }
+}
+@media screen and (min-width: rem(1024)) {
+  .hero {
+    padding-block: rem(76);
+    padding-inline: $desktop-padding-inline;
+    flex-direction: row;
+    text-align: left;
+    gap: rem(80);
+
+    &__content {
+      order: 1;
+    }
+
+    &__illustration {
+      order: 2;
+
+      img {
+        min-width: rem(250);
+      }
+    }
+    &__title {
+      font-size: rem(72);
+      line-height: rem(72);
+      letter-spacing: rem(-0.55);
+      text-align: left;
+    }
+
+    &__form {
+      input {
+        width: rem(350);
+      }
+    }
+    &__contact {
+      margin-left: rem(20);
+    }
+  }
 }

@@ -31,3 +31,14 @@
     gap: rem(40);
   }
 }
+
+@media screen and (min-width: rem(700)) {
+  .header {
+    padding-inline: $tablet-padding-inline;
+  }
+}
+@media screen and (min-width: rem(1024)) {
+  .header {
+    padding-inline: $desktop-padding-inline;
+  }
+}

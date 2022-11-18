@@ -1,12 +1,14 @@
 @use '../abstracts/functions' as *;
 
 // Colors
-$dark-pink: rgb(186, 66, 112);
-$water-white: rgb(251, 252, 254);
-$san-juan-blue: rgb(54, 83, 107);
-$mirage-blue: rgb(27, 38, 47);
-$charm-pink: rgb(218, 109, 151);
-$san-juan-blue-light: rgb(108, 130, 148);
+$dark-pink: #ba4270;
+$water-white: #fbfcfe;
+$san-juan-blue: #36536b;
+$mirage-blue: #1b262f;
+$charm-pink: #da6d97;
+$san-juan-blue-light: #6c8294;
 
 //Sizes
 $mobile-padding-inline: rem(25);
+$tablet-padding-inline: rem(39.17);
+$desktop-padding-inline: rem(165);

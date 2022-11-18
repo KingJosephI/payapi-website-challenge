@@ -1,5 +1,5 @@
+@use '../base/typography' as *;
 @use '../abstracts/' as *;
-@use '../base/' as *;
 
 *,
 *::before,
@@ -13,10 +13,19 @@ body {
   font-size: rem(15);
   line-height: rem(28);
   font-family: 'Public Sans', sans-serif;
-  @include new-background-image(
-    '../../assets/shared/desktop/bg-pattern-circle.svg',
-    top center
-  );
+  background-color: #edf3f8;
+  background-image: url('../../assets/shared/desktop/bg-pattern-circle.svg');
+  background-repeat: no-repeat;
+  background-position: top rem(-400) center;
+
+  @media screen and (min-width: rem(700)) and (max-width: rem(1023)) {
+    background-size: rem(1000);
+    background-position: top rem(-500) center;
+  }
+
+  @media screen and (min-width: rem(1024)) {
+    background-position: top rem(-200) right rem(-150);
+  }
 }
 
 ul {
@@ -31,4 +40,9 @@ input,
 input::placeholder {
   font-size: inherit;
   font-family: inherit;
+}
+
+img {
+  width: 100%;
+  // text-align: center;
 }
