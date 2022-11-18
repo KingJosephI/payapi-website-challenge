@@ -627,4 +627,127 @@ button:hover {
             padding-block-start: 0;
     padding-inline: 11rem;
   }
+}
+.pricing {
+  padding-inline: 1.6666666667rem;
+  text-align: center;
+}
+.pricing__title {
+  font-size: 2.1333333333rem;
+  line-height: 2.1333333333rem;
+  letter-spacing: -0.0166666667rem;
+  padding-block: 3.2rem;
+  font-weight: normal;
+}
+.pricing__card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  -webkit-padding-after: 5.3333333333rem;
+          padding-block-end: 5.3333333333rem;
+}
+
+.card {
+  text-align: left;
+}
+.card__title {
+  text-align: center;
+  color: #ba4270;
+  font-weight: normal;
+}
+.card__description {
+  opacity: 0;
+}
+.card__details {
+  text-align: center;
+}
+.card__price {
+  font-size: 3.7333333333rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.0286666667rem;
+  font-weight: normal;
+}
+.card__features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5333333333rem;
+  padding-block: 1.6rem;
+  text-align: left;
+  color: #36536b;
+  border-top: 0.0666666667rem solid #9fb9ce;
+  border-bottom: 0.0666666667rem solid #9fb9ce;
+}
+.card__features li {
+  list-style-image: url("../../../assets/shared/desktop/icon-check.svg");
+  margin-left: 12rem;
+}
+.card .item-disabled {
+  color: #7da0bd;
+  list-style: none;
+}
+.card__request-access-button {
+  display: inline-block;
+  color: #36536b;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 0.1333333333rem solid #36536b;
+  border-radius: 2rem;
+  margin-top: 1.6rem;
+  transition: 0.2s;
+}
+.card__request-access-button:hover {
+  background-color: #36536b;
+  color: #fbfcfe;
+}
+
+@media screen and (min-width: 46.6666666667rem) {
+  .pricing {
+    padding-inline: 2.6113333333rem;
+  }
+  .pricing__title {
+    font-size: 3.2rem;
+    line-height: 3.7333333333rem;
+    letter-spacing: -0.0286666667rem;
+    padding-block: 5rem;
+  }
+  .pricing__card-container {
+    flex-direction: row;
+  }
+  .card__description {
+    opacity: 1;
+    font-size: 1rem;
+    line-height: 1.8666666667rem;
+    color: #6c8294;
+    font-weight: normal;
+    text-align: center;
+    padding-block: 0.8666666667rem 1.2666666667rem;
+  }
+  .card li {
+    margin-left: 4.6666666667rem;
+  }
+}
+@media screen and (min-width: 68.2666666667rem) {
+  .pricing {
+    padding-inline: 11rem;
+  }
+  .pricing__title {
+    font-size: 3.7333333333rem;
+    text-align: left;
+    padding-block: 5.4666666667rem;
+  }
+  .card {
+    text-align: left;
+  }
+  .card__details {
+    text-align: left;
+  }
+  .card__title {
+    text-align: left;
+  }
+  .card__description {
+    text-align: left;
+  }
+  .card li {
+    margin-left: 1.2rem;
+  }
 }/*# sourceMappingURL=main.css.map */

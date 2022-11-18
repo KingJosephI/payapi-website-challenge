@@ -4,65 +4,138 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-
-    <title>Frontend Mentor | PayAPI Website Challenge</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dist/main.css" />
+    <title>PayAPI Website - Pricing</title>
   </head>
 
   <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
+    <header class="header">
+      <div class="header__logo">
+        <img src="./assets/shared/desktop/logo.svg" alt="logo" />
+      </div>
+      <button class="header__toggle-menu"></button>
+      <nav class="header__navigation">
+        <ul class="header__menu">
+          <li><a class="header__link" href="pricing.html">Pricing</a></li>
+          <li><a class="header__link" href="about.html">About</a></li>
+          <li><a class="header__link" href="contact.html">Contact</a></li>
+          <li>
+            <a class="header__link header__demo-button" href="#"
+              >Schedule a Demo</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="pricing">
+        <h1 class="pricing__title">Pricing</h1>
+        <div class="pricing__card-container">
+          <div class="card">
+            <h2 class="card__title">Free Plan</h2>
+            <p class="card__description">
+              Build and test using our core set of products with up to 100 API
+              requests
+            </p>
+            <div class="card__details">
+              <h3 class="card__price">$0.00</h3>
+              <ul class="card__features">
+                <li>Transactions</li>
+                <li>Auth</li>
+                <li>Identity</li>
+                <li class="item-disabled">Investments</li>
+                <li class="item-disabled">Assets</li>
+                <li class="item-disabled">Liabilities</li>
+                <li class="item-disabled">Income</li>
+              </ul>
+              <a class="card__request-access-button" href="#">Request Access</a>
+            </div>
+          </div>
 
-    Pricing
+          <div class="card">
+            <h2 class="card__title">Basic Plan</h2>
+            <p class="card__description">
+              Launch your project with unlimited requests and no contractual
+              minimums
+            </p>
+            <div class="card__details">
+              <h3 class="card__price">$249.00</h3>
+              <ul class="card__features">
+                <li>Transactions</li>
+                <li>Auth</li>
+                <li>Identity</li>
+                <li>Investments</li>
+                <li>Assets</li>
+                <li class="item-disabled">Liabilities</li>
+                <li class="item-disabled">Income</li>
+              </ul>
+              <a class="card__request-access-button" href="#">Request Access</a>
+            </div>
+          </div>
 
-    Free Plan
-    Build and test using our core set of products with up to 100 API requests
-    $0.00
-    
-    Transactions
-    Auth
-    Identity
-    Investments
-    Assets
-    Liabilities
-    Income
-    Request Access
+          <div class="card">
+            <h2 class="card__title">Premium Plan</h2>
+            <p class="card__description">
+              Get tailored solutions, volume pricing, and dedicated support for
+              your team
+            </p>
+            <div class="card__details">
+              <h3 class="card__price">$499.00</h3>
+              <ul class="card__features">
+                <li>Transactions</li>
+                <li>Auth</li>
+                <li>Identity</li>
+                <li>Investments</li>
+                <li>Assets</li>
+                <li>Liabilities</li>
+                <li>Income</li>
+              </ul>
+              <a class="card__request-access-button" href="#">Request Access</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    Basic Plan
-    Launch your project with unlimited requests and no contractual minimums
-    $249.00
-    
-    Transactions
-    Auth
-    Identity
-    Investments
-    Assets
-    Liabilities
-    Income
-    Request Access
+      <section class="form-section">
+        <h2 class="form-section__title">Ready to start?</h2>
+        <form class="form">
+          <input
+            class="form__input"
+            type="email"
+            placeholder="Enter email address "
+          />
+          <button class="form__button" type="submit">Schedule a Demo</button>
+        </form>
+      </section>
+    </main>
 
-    Premium Plan
-    Get tailored solutions, volume pricing, and dedicated support for your team
-    $499.00
-    
-    Transactions
-    Auth
-    Identity
-    Investments
-    Assets
-    Liabilities
-    Income
-    Request Access
-
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
-
-    Pricing
-    About
-    Contact
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="./assets/shared/desktop/logo-footer.svg" alt="logo" />
+      </div>
+      <ul class="footer__menu">
+        <li><a class="footer__link" href="pricing.html">Pricing</a></li>
+        <li><a class="footer__link" href="about.html">About</a></li>
+        <li><a class="footer__link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-media">
+        <div><i class="fa-brands fa-square-facebook"></i></div>
+        <div><i class="fa-brands fa-twitter"></i></div>
+        <div><i class="fa-brands fa-linkedin"></i></div>
+      </div>
+    </footer>
   </body>
-
 </html>
