@@ -34,10 +34,8 @@
 @media screen and (min-width: rem(1024)) {
   .easy-implement {
     padding-inline: $desktop-padding-inline;
-    // padding-block: rem(150);
-    padding-block: rem(50);
+    padding-block: rem(50) 0;
     text-align: left;
-
     display: flex;
     align-items: center;
     gap: rem(100);

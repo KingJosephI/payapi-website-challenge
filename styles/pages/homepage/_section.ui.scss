@@ -30,7 +30,7 @@
 @media screen and (min-width: rem(1024)) {
   .simple-ui {
     padding-inline: $desktop-padding-inline;
-    padding-block: rem(100);
+    padding-block: rem(115);
     text-align: left;
 
     display: flex;
@@ -39,8 +39,8 @@
 
     background-image: url('../../../assets/shared/desktop/bg-pattern-circle.svg');
     background-repeat: no-repeat;
-    background-position: center right rem(-200);
-    background-size: rem(550);
+    background-position: center right rem(-220);
+    background-size: rem(560);
 
     &__content {
       margin-top: rem(-20);

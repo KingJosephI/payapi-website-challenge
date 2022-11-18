@@ -518,7 +518,7 @@ button:hover {
 @media screen and (min-width: 68.2666666667rem) {
   .easy-implement {
     padding-inline: 11rem;
-    padding-block: 3.3333333333rem;
+    padding-block: 3.3333333333rem 0;
     text-align: left;
     display: flex;
     align-items: center;
@@ -562,15 +562,15 @@ button:hover {
 @media screen and (min-width: 68.2666666667rem) {
   .simple-ui {
     padding-inline: 11rem;
-    padding-block: 6.6666666667rem;
+    padding-block: 7.6666666667rem;
     text-align: left;
     display: flex;
     align-items: center;
     gap: 6.6666666667rem;
     background-image: url("../../../assets/shared/desktop/bg-pattern-circle.svg");
     background-repeat: no-repeat;
-    background-position: center right -13.3333333333rem;
-    background-size: 36.6666666667rem;
+    background-position: center right -14.6666666667rem;
+    background-size: 37.3333333333rem;
   }
   .simple-ui__content {
     margin-top: -1.3333333333rem;
