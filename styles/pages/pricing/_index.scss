@@ -1,1 +1,147 @@
-@forward './section.pricing';
+@use '../../base/' as *;
+@use '../../abstracts/' as *;
+
+.pricing {
+  padding-inline: $mobile-padding-inline;
+  text-align: center;
+
+  &__title {
+    font-size: rem(32);
+    line-height: rem(32);
+    letter-spacing: rem(-0.25);
+    padding-block: rem(48);
+    font-weight: normal;
+  }
+
+  &__card-container {
+    display: flex;
+    flex-direction: column;
+    gap: rem(48);
+
+    padding-block-end: rem(80);
+  }
+}
+
+.card {
+  text-align: left;
+
+  &__title {
+    text-align: center;
+    color: $dark-pink;
+    font-weight: normal;
+  }
+
+  &__description {
+    opacity: 0;
+  }
+
+  &__details {
+    text-align: center;
+  }
+
+  &__price {
+    font-size: rem(56);
+    line-height: rem(72);
+    letter-spacing: rem(-0.43);
+    font-weight: normal;
+  }
+  &__features {
+    display: flex;
+    flex-direction: column;
+    gap: rem(8);
+    padding-block: rem(24);
+    text-align: left;
+    color: $san-juan-blue;
+    border-top: rem(1) solid lighten($san-juan-blue, 40%);
+    border-bottom: rem(1) solid lighten($san-juan-blue, 40%);
+
+    li {
+      list-style-image: url('../../../assets/shared/desktop/icon-check.svg');
+
+      margin-left: rem(140);
+    }
+  }
+
+  .item-disabled {
+    color: lighten($san-juan-blue, 30%);
+    list-style: none;
+  }
+
+  &__request-access-button {
+    display: inline-block;
+    color: $san-juan-blue;
+    font-weight: 700;
+    padding: rem(15) rem(30);
+    border: rem(2) solid $san-juan-blue;
+    border-radius: rem(30);
+    margin-top: rem(24);
+    transition: 0.2s;
+
+    &:hover {
+      background-color: $san-juan-blue;
+      color: $water-white;
+    }
+  }
+}
+
+@media screen and (min-width: rem(700)) {
+  .pricing {
+    padding-inline: $tablet-padding-inline;
+
+    &__title {
+      font-size: rem(48);
+      line-height: rem(56);
+      letter-spacing: rem(-0.43);
+      padding-block: rem(75);
+    }
+
+    &__card-container {
+      flex-direction: row;
+    }
+  }
+  .card {
+    &__description {
+      opacity: 1;
+      font-size: rem(15);
+      line-height: rem(28);
+      color: $san-juan-blue-light;
+      font-weight: normal;
+      text-align: center;
+      padding-block: rem(13) rem(19);
+    }
+
+    li {
+      margin-left: rem(70);
+    }
+  }
+}
+@media screen and (min-width: rem(1024)) {
+  .pricing {
+    padding-inline: $desktop-padding-inline;
+
+    &__title {
+      font-size: rem(56);
+      text-align: left;
+      padding-block: rem(82);
+    }
+  }
+
+  .card {
+    text-align: left;
+
+    &__details {
+      text-align: left;
+    }
+    &__title {
+      text-align: left;
+    }
+
+    &__description {
+      text-align: left;
+    }
+
+    li {
+      margin-left: rem(18);
+    }
+  }
+}
