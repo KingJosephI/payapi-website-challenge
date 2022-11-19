@@ -750,4 +750,111 @@ button:hover {
   .card li {
     margin-left: 1.2rem;
   }
+}
+.about-main > * {
+  padding-inline: 1.6666666667rem;
+  text-align: center;
+}
+.about-main h1 {
+  font-size: 2.1333333333rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.0166666667rem;
+  font-weight: normal;
+  padding-block: 3.2rem 2.6666666667rem;
+}
+.about-main .about {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding-bottom: 5.0666666667rem;
+}
+.about-main .about__title {
+  padding-bottom: 1.0666666667rem;
+}
+.about-main .team {
+  padding-inline: 0;
+  padding-block: 3.2rem;
+}
+.about-main .team__stats {
+  margin-block: 3.2rem;
+  margin-inline: 1.6666666667rem;
+  padding-block: 1.0666666667rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.1333333333rem;
+  border-top: 0.0666666667rem solid #9fb9ce;
+  border-bottom: 0.0666666667rem solid #9fb9ce;
+}
+.about-main .team__stats h3 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: normal;
+  font-size: 1.0666666667rem;
+  line-height: 1.8666666667rem;
+  color: #6c8294;
+}
+.about-main .team__stats p {
+  color: #ba4270;
+  font-size: 3.7333333333rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.0286666667rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 46.6666666667rem) {
+  .about-main > * {
+    padding-inline: 2.6113333333rem;
+    text-align: left;
+  }
+  .about-main h1 {
+    font-size: 3.2rem;
+    line-height: 3.7333333333rem;
+    letter-spacing: -0.0246666667rem;
+    text-align: center;
+  }
+  .about-main .about > * {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 20% 80%;
+    gap: 0;
+  }
+  .about-main .team {
+    padding-inline: 0;
+    padding-block: 3.2rem;
+  }
+  .about-main .team__stats {
+    margin-block: 4.2666666667rem;
+    margin-inline: 2.6113333333rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: none;
+  }
+  .about-main .team__card {
+    padding: 1.0666666667rem;
+    border-top: 0.0666666667rem solid #9fb9ce;
+    border-bottom: 0.0666666667rem solid #9fb9ce;
+  }
+}
+@media screen and (min-width: 68.2666666667rem) {
+  .about-main > * {
+    padding-inline: 11rem;
+  }
+  .about-main h1 {
+    font-size: 3.7333333333rem;
+    letter-spacing: -0.0286666667rem;
+    text-align: left;
+    padding-block: 5.4666666667rem 3.4rem;
+    padding-inline: 17.3333333333rem;
+  }
+  .about-main .about {
+    padding-inline: 17.3333333333rem;
+  }
+  .about-main .team {
+    padding-inline: 0;
+    padding-block: 3.2rem;
+  }
+  .about-main .team__stats {
+    margin-block: 4.8rem;
+    margin-inline: 11rem;
+  }
 }/*# sourceMappingURL=main.css.map */
