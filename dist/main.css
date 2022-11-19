@@ -849,12 +849,180 @@ button:hover {
   .about-main .about {
     padding-inline: 17.3333333333rem;
   }
+  .about-main .about:first-of-type {
+    padding-bottom: 0;
+  }
   .about-main .team {
     padding-inline: 0;
     padding-block: 3.2rem;
+    padding-block: 0;
   }
   .about-main .team__stats {
-    margin-block: 4.8rem;
+    margin-block: 0 4.8rem;
     margin-inline: 11rem;
+  }
+  .about-main .team__illustration {
+    padding-block: 6.6666666667rem;
+    background-image: url("../../../assets/shared/desktop/bg-pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: left -33.3333333333rem center;
+  }
+}
+.contact-main__title {
+  font-weight: normal;
+  font-size: 2.1333333333rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.0166666667rem;
+  text-align: center;
+  padding-block: 3.2rem 2.6666666667rem;
+  padding-inline: 1.6666666667rem;
+}
+
+.contact {
+  padding-inline: 1.6666666667rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  max-width: 26.6666666667rem;
+}
+.contact .contact-form__input {
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  border-bottom: 0.0666666667rem solid #9fb9ce;
+  padding-left: 0.3333333333rem;
+  max-width: 26.6666666667rem;
+}
+.contact .contact-form__input::-moz-placeholder {
+  font-weight: normal;
+}
+.contact .contact-form__input:-ms-input-placeholder {
+  font-weight: normal;
+}
+.contact .contact-form__input::placeholder {
+  font-weight: normal;
+}
+.contact .contact-form__textarea {
+  outline: none;
+  font-family: "Public Sans", sans-serif;
+}
+.contact .contact-form__textarea::-moz-placeholder {
+  color: #a7b4bf;
+}
+.contact .contact-form__textarea:-ms-input-placeholder {
+  color: #a7b4bf;
+}
+.contact .contact-form__textarea::placeholder {
+  color: #a7b4bf;
+}
+.contact .contact-form__submit-button {
+  margin-left: 0;
+  background-color: transparent;
+  color: #36536b;
+  width: 10rem;
+  box-shadow: none;
+  border: 0.0666666667rem solid #36536b;
+  transition: 0.2s;
+  align-self: flex-start;
+}
+.contact .contact-form__submit-button:hover {
+  background-color: #36536b;
+  color: #fbfcfe;
+}
+.contact .contact-form > div {
+  position: relative;
+  border: none;
+  box-shadow: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.3333333333rem;
+  margin-bottom: 0;
+}
+.contact .contact-form > div label {
+  display: inline-block;
+  width: 24.6666666667rem;
+  font-size: 1rem;
+  line-height: 1.6666666667rem;
+  letter-spacing: -0.008rem;
+  color: #36536b;
+}
+.contact .contact-form__checkbox {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  transform: scale(1.7); /* scale up the checkbox*/
+  accent-color: #ba4270;
+}
+.contact .contact-form__checkbox::before {
+  background-color: yellow;
+}
+
+.innovators {
+  -webkit-padding-before: 5.3333333333rem;
+          padding-block-start: 5.3333333333rem;
+}
+.innovators__title {
+  font-size: 1.6rem;
+  line-height: 2.1333333333rem;
+  letter-spacing: -0.012rem;
+  font-weight: normal;
+  text-align: center;
+  -webkit-padding-after: 2.1333333333rem;
+          padding-block-end: 2.1333333333rem;
+}
+
+@media screen and (min-width: 46.6666666667rem) {
+  .contact-main__title {
+    font-size: 3.2rem;
+    line-height: 3.7333333333rem;
+    letter-spacing: -0.0246666667rem;
+    padding-block: 5rem 3.6rem;
+    padding-inline: 2.6113333333rem;
+  }
+  .contact {
+    padding-inline: 2.6113333333rem;
+  }
+  .innovators__title {
+    width: 33.3333333333rem;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 68.2666666667rem) {
+  .contact-main__title {
+    font-size: 3.7333333333rem;
+    letter-spacing: -0.0286666667rem;
+    text-align: left;
+    padding-block: 5.4666666667rem 2.8666666667rem;
+    padding-inline: 11rem;
+  }
+  .contact {
+    padding-inline: 11rem;
+    -webkit-padding-after: 6.6666666667rem;
+            padding-block-end: 6.6666666667rem;
+    flex-direction: row;
+    gap: 6.6666666667rem;
+  }
+  .contact .contact-form {
+    align-items: start;
+  }
+  .innovators {
+    padding-block: 0 6.6666666667rem;
+  }
+  .innovators__title {
+    text-align: left;
+  }
+  .innovators .clients__companies {
+    justify-items: left;
   }
 }/*# sourceMappingURL=main.css.map */
