@@ -679,7 +679,7 @@ button:hover {
 }
 .card__features li {
   list-style-image: url("../../../assets/shared/desktop/icon-check.svg");
-  margin-left: 12rem;
+  margin-left: 9.3333333333rem;
 }
 .card .item-disabled {
   color: #7da0bd;

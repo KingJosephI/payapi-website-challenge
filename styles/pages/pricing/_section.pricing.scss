@@ -55,14 +55,10 @@
     border-top: rem(1) solid lighten($san-juan-blue, 40%);
     border-bottom: rem(1) solid lighten($san-juan-blue, 40%);
 
-    // position: absolute;
-    // left: 50%;
-
     li {
       list-style-image: url('../../../assets/shared/desktop/icon-check.svg');
-      // margin: 0 auto;
-      // text-align: left;
-      margin-left: rem(180);
+
+      margin-left: rem(140);
     }
   }
 

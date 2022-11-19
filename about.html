@@ -10,28 +10,84 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dist/main.css" />
+
+    <script src="./js/main.js" defer></script>
 
     <title>PayAPI - About</title>
   </head>
 
   <body>
-    Pricing About Contact Schedule a Demo We empower innovators by delivering
-    access to the financial system Our Vision Our main goal is to build
-    beautiful consumer experiences along with developer-friendly infrastructure.
-    The result is an intelligent tool that gives everyone the ability to create
-    amazing products that solve big problems. We are deeply focused on
-    democratizing financial services through technology. Our Business At the
-    core of our platform is the technical infrastructure APIs that connect
-    consumers. Our innovative product provides key insights for businesses and
-    individuals, as well as robust reporting for traditional financial
-    institutions and developers. Team Members 300+ Offices in the US 3
-    Transactions analyzed 10M+ The Culture We strongly believe there's always an
-    opportunity to learn from each other outside of day-to-day work, whether
-    it's company-wide offsites, internal hackathons, or co-worker meetups. We
-    always value cross-team collaboration and diversity of thought, no matter
-    the job title. The People We're all passionate about building a more
-    efficient and inclusive financial infrastructure together. At PayAPI, we
-    have diverse backgrounds and skills. Ready to start? Enter email address
-    Schedule a Demo Pricing About Contact
+    <header class="header">
+      <div class="header__logo">
+        <a href="index.html"
+          ><img src="./assets/shared/desktop/logo.svg" alt="logo"
+        /></a>
+      </div>
+      <button class="header__toggle-menu"></button>
+      <nav class="header__navigation">
+        <ul class="header__menu">
+          <li><a class="header__link" href="pricing.html">Pricing</a></li>
+          <li><a class="header__link" href="about.html">About</a></li>
+          <li><a class="header__link" href="contact.html">Contact</a></li>
+          <li>
+            <a class="header__link header__demo-button" href="#"
+              >Schedule a Demo</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    We empower innovators by delivering access to the financial system Our
+    Vision Our main goal is to build beautiful consumer experiences along with
+    developer-friendly infrastructure. The result is an intelligent tool that
+    gives everyone the ability to create amazing products that solve big
+    problems. We are deeply focused on democratizing financial services through
+    technology. Our Business At the core of our platform is the technical
+    infrastructure APIs that connect consumers. Our innovative product provides
+    key insights for businesses and individuals, as well as robust reporting for
+    traditional financial institutions and developers. Team Members 300+ Offices
+    in the US 3 Transactions analyzed 10M+ The Culture We strongly believe
+    there's always an opportunity to learn from each other outside of day-to-day
+    work, whether it's company-wide offsites, internal hackathons, or co-worker
+    meetups. We always value cross-team collaboration and diversity of thought,
+    no matter the job title. The People We're all passionate about building a
+    more efficient and inclusive financial infrastructure together. At PayAPI,
+    we have diverse backgrounds and skills.
+
+    <section class="form-section">
+      <h2 class="form-section__title">Ready to start?</h2>
+      <form class="form">
+        <input
+          class="form__input"
+          type="email"
+          placeholder="Enter email address "
+        />
+        <button class="form__button" type="submit">Schedule a Demo</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="./assets/shared/desktop/logo-footer.svg" alt="logo" />
+      </div>
+      <ul class="footer__menu">
+        <li><a class="footer__link" href="pricing.html">Pricing</a></li>
+        <li><a class="footer__link" href="about.html">About</a></li>
+        <li><a class="footer__link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-media">
+        <div><i class="fa-brands fa-square-facebook"></i></div>
+        <div><i class="fa-brands fa-twitter"></i></div>
+        <div><i class="fa-brands fa-linkedin"></i></div>
+      </div>
+    </footer>
   </body>
 </html>
