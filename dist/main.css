@@ -849,12 +849,22 @@ button:hover {
   .about-main .about {
     padding-inline: 17.3333333333rem;
   }
+  .about-main .about:first-of-type {
+    padding-bottom: 0;
+  }
   .about-main .team {
     padding-inline: 0;
     padding-block: 3.2rem;
+    padding-block: 0;
   }
   .about-main .team__stats {
-    margin-block: 4.8rem;
+    margin-block: 0 4.8rem;
     margin-inline: 11rem;
+  }
+  .about-main .team__illustration {
+    padding-block: 6.6666666667rem;
+    background-image: url("../../../assets/shared/desktop/bg-pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: left -33.3333333333rem center;
   }
 }/*# sourceMappingURL=main.css.map */

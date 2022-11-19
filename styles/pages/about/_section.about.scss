@@ -121,15 +121,27 @@
 
     .about {
       padding-inline: rem(260);
+
+      &:first-of-type {
+        padding-bottom: 0;
+      }
     }
 
     .team {
       padding-inline: 0;
       padding-block: rem(48);
+      padding-block: 0;
 
       &__stats {
-        margin-block: rem(72);
+        margin-block: 0 rem(72);
         margin-inline: $desktop-padding-inline;
+      }
+
+      &__illustration {
+        padding-block: rem(100);
+        background-image: url('../../../assets/shared/desktop/bg-pattern-circle.svg');
+        background-repeat: no-repeat;
+        background-position: left rem(-500) center;
       }
     }
   }
