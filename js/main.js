@@ -1,7 +1,7 @@
 const activePage = location.pathname;
 
-console.log(activePage);
-console.log(screen.width);
+// console.log(activePage);
+// console.log(screen.width);
 
 if (activePage !== '/' && activePage !== '/index.html') {
   if (screen.width <= 700) {

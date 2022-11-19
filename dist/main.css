@@ -880,12 +880,16 @@ button:hover {
 
 .contact {
   padding-inline: 1.6666666667rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contact .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
   align-items: center;
+  gap: 1.6rem;
+  max-width: 26.6666666667rem;
 }
 .contact .contact-form__input {
   border-radius: 0;
@@ -925,12 +929,14 @@ button:hover {
   box-shadow: none;
   border: 0.0666666667rem solid #36536b;
   transition: 0.2s;
+  align-self: flex-start;
 }
 .contact .contact-form__submit-button:hover {
   background-color: #36536b;
   color: #fbfcfe;
 }
 .contact .contact-form > div {
+  position: relative;
   border: none;
   box-shadow: none;
   width: -webkit-fit-content;
@@ -956,6 +962,10 @@ button:hover {
   width: fit-content;
   display: inline-block;
   transform: scale(1.7); /* scale up the checkbox*/
+  accent-color: #ba4270;
+}
+.contact .contact-form__checkbox::before {
+  background-color: yellow;
 }
 
 .innovators {
@@ -1000,9 +1010,8 @@ button:hover {
     padding-inline: 11rem;
     -webkit-padding-after: 6.6666666667rem;
             padding-block-end: 6.6666666667rem;
-    display: flex;
-    align-items: center;
-    gap: 8.2666666667rem;
+    flex-direction: row;
+    gap: 6.6666666667rem;
   }
   .contact .contact-form {
     align-items: start;
@@ -1012,5 +1021,8 @@ button:hover {
   }
   .innovators__title {
     text-align: left;
+  }
+  .innovators .clients__companies {
+    justify-items: left;
   }
 }/*# sourceMappingURL=main.css.map */
