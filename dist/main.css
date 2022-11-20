@@ -157,8 +157,14 @@ p {
 }
 .header__navigation.active .header__menu {
   padding-top: 11rem;
+  padding-top: 8.7333333333rem;
   opacity: 1;
   text-align: center;
+}
+.header__navigation.active .header__menu li:first-of-type {
+  border-top: 0.0666666667rem solid #6c8294;
+  -webkit-padding-before: 2.8666666667rem;
+          padding-block-start: 2.8666666667rem;
 }
 .header__navigation.active .header__link {
   color: #6c8294;

@@ -100,8 +100,14 @@
 
   &__navigation.active &__menu {
     padding-top: $desktop-padding-inline;
+    padding-top: rem(131);
     opacity: 1;
     text-align: center;
+
+    li:first-of-type {
+      border-top: rem(1) solid $san-juan-blue-light;
+      padding-block-start: rem(43);
+    }
   }
 
   &__navigation.active &__link {
