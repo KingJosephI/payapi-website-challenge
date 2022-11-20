@@ -24,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     gap: rem(24);
-    max-width: rem(400);
+    max-width: clamp(rem(200), 100%, rem(400));
 
     &__input {
       border-radius: 0;
@@ -66,18 +66,16 @@
 
     > div {
       position: relative;
-      border: none;
       box-shadow: none;
-      width: fit-content;
       padding-left: 0;
       display: flex;
       align-items: center;
       gap: rem(20);
       margin-bottom: 0;
+      margin: 0 auto;
 
       label {
         display: inline-block;
-        width: rem(370);
         font-size: rem(15);
         line-height: rem(25);
         letter-spacing: rem(-0.12);
