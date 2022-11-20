@@ -443,7 +443,7 @@ button:hover {
 }
 @media screen and (min-width: 68.2666666667rem) {
   .hero {
-    padding-block: 5.0666666667rem;
+    padding-block: 5rem;
     padding-inline: 11rem;
     flex-direction: row;
     text-align: left;

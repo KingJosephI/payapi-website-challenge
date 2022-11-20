@@ -94,11 +94,12 @@
 }
 @media screen and (min-width: rem(1024)) {
   .hero {
-    padding-block: rem(76);
+    padding-block: rem(75);
     padding-inline: $desktop-padding-inline;
     flex-direction: row;
     text-align: left;
     gap: rem(80);
+    // background-color: yellow;
 
     &__content {
       order: 1;
