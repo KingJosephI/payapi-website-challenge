@@ -19,6 +19,17 @@
 
     &:hover {
       cursor: pointer;
+      background-color: transparent;
+    }
+
+    &.close {
+      background-image: url('../../assets/shared/mobile/close.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      position: fixed;
+      top: rem(41);
+      right: rem(25);
+      z-index: 9999;
     }
   }
 
@@ -26,50 +37,103 @@
     width: 100%;
     display: none;
   }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: rem(40);
+    width: fit-content;
+    margin: 0 auto;
+    opacity: 0; // Added
+
+    li:last-child {
+      margin-left: auto;
+    }
+  }
+  &__link {
+    font-size: rem(15);
+    font-weight: 700;
+    color: $san-juan-blue-light;
+
+    &:hover {
+      color: $san-juan-blue;
+    }
+  }
+
+  &__demo-button {
+    background-color: $dark-pink;
+    color: $water-white;
+    padding: rem(15) rem(30);
+    border-radius: rem(30);
+
+    &:hover {
+      color: $water-white;
+      background-color: $charm-pink;
+    }
+  }
+
+  .active-link {
+    color: $dark-pink;
+  }
+
+  &__navigation.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 30%;
+    right: 0;
+    bottom: 0;
+    width: 70vw;
+    background-color: $mirage-blue;
+    box-shadow: rgba(0, 37, 41, 0.595) 0px 8px 24px;
+    z-index: 1001;
+    transition: 0.2s;
+    overflow: hidden;
+    background-image: url('../../assets/shared/desktop/bg-pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-position: top rem(-550) center;
+  }
+
+  &__navigation.active &__menu {
+    padding-top: $desktop-padding-inline;
+    padding-top: rem(131);
+    opacity: 1;
+    text-align: center;
+
+    li:first-of-type {
+      border-top: rem(1) solid $san-juan-blue-light;
+      padding-block-start: rem(43);
+    }
+  }
+
+  &__navigation.active &__link {
+    color: $san-juan-blue-light;
+
+    &:hover {
+      color: $water-white;
+    }
+  }
 }
 
 @media screen and (min-width: rem(700)) {
   .header {
     padding-inline: $tablet-padding-inline;
+
     &__toggle-menu {
       display: none;
+    }
+
+    &__navigation {
+      display: block;
     }
     &__logo {
       margin-right: rem(50);
     }
-    &__navigation {
-      display: flex;
-      width: 100%;
-    }
 
     &__menu {
-      display: flex;
-      gap: rem(40);
+      flex-direction: row;
+      opacity: 1;
       width: 100%;
-
-      li:last-child {
-        margin-left: auto;
-      }
-    }
-    &__link {
-      font-size: rem(15);
-      font-weight: 700;
-      color: $san-juan-blue-light;
-
-      &:hover {
-        color: $san-juan-blue;
-      }
-    }
-    &__demo-button {
-      background-color: $dark-pink;
-      color: $water-white;
-      padding: rem(15) rem(30);
-      border-radius: rem(30);
-
-      &:hover {
-        color: $water-white;
-        background-color: $charm-pink;
-      }
     }
   }
 }
