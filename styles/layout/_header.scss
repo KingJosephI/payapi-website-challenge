@@ -92,10 +92,6 @@
     background-image: url('../../assets/shared/desktop/bg-pattern-circle.svg');
     background-repeat: no-repeat;
     background-position: top rem(-550) center;
-    // @include back-image(
-    //   '../../assets/bg-pattern-about-1-mobile-nav-1.svg',
-    //   bottom right rem(-100)
-    // );
   }
 
   &__navigation.active &__menu {

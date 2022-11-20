@@ -3,9 +3,9 @@ const activePage = location.pathname;
 // Change the background circle pattern position on load and depending on the screen size
 window.onload = function () {
   if (activePage !== '/' && activePage !== '/index.html') {
-    if (screen.width <= 700) {
+    if (window.innerWidth <= 700) {
       document.body.style.backgroundPosition = 'top -600px right -350px';
-    } else if (screen.width > 700 && screen.width < 1024) {
+    } else if (window.innerWidth > 700 && window.innerWidth < 1024) {
       document.body.style.backgroundPosition = 'top -700px right -650px';
     } else {
       document.body.style.backgroundPosition = 'top -520px right -150px';
