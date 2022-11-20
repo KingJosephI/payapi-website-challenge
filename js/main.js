@@ -13,6 +13,16 @@ window.onload = function () {
   }
 };
 
+// Reponsive menu
+const hamburger = document.querySelector('.header__toggle-menu');
+const navBar = document.querySelector('.header__navigation');
+hamburger.addEventListener('click', () => {
+  navBar.classList.toggle('active');
+  hamburger.classList.toggle('close');
+
+  // alert('Joseph');
+});
+
 //Set the active menu
 const menuItems = document.querySelectorAll('.header__link');
 const button = document.querySelector('.header__demo-button');
@@ -27,13 +37,3 @@ const navigationLinks = document
       link.classList.replace('active-link', '');
     }
   });
-
-// Reponsive menu
-const hamburger = document.querySelector('.header__toggle-menu');
-const navBar = document.querySelector('.header__navigation');
-hamburger.addEventListener('click', () => {
-  navBar.classList.toggle('active');
-  hamburger.classList.toggle('close');
-
-  // alert('Joseph');
-});

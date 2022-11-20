@@ -40,8 +40,11 @@
 
   &__menu {
     display: flex;
+    flex-direction: column;
     gap: rem(40);
-    width: 100%;
+    width: fit-content;
+    margin: 0 auto;
+    opacity: 0; // Added
 
     li:last-child {
       margin-left: auto;
@@ -95,7 +98,7 @@
     // );
   }
 
-  &__navigation.active ul {
+  &__navigation.active &__menu {
     padding-top: $desktop-padding-inline;
     opacity: 1;
     text-align: center;
@@ -108,13 +111,6 @@
       color: $water-white;
     }
   }
-
-  &__navigation ul {
-    flex-direction: column;
-    width: fit-content;
-    margin: 0 auto;
-    opacity: 0;
-  }
 }
 
 @media screen and (min-width: rem(700)) {
@@ -124,86 +120,23 @@
     &__toggle-menu {
       display: none;
     }
+
+    &__navigation {
+      display: block;
+    }
     &__logo {
       margin-right: rem(50);
     }
-    &__navigation {
-      display: flex;
-      display: block;
-      width: 100%;
-    }
-    .active {
-      display: none;
-    }
+
     &__menu {
       flex-direction: row;
-      // display: flex;
-      // gap: rem(40);
-      // width: 100%;
-
-      // li:last-child {
-      //   margin-left: auto;
-      // }
+      opacity: 1;
+      width: 100%;
     }
-    // &__link {
-    //   font-size: rem(15);
-    //   font-weight: 700;
-    //   color: $san-juan-blue-light;
-
-    //   &:hover {
-    //     color: $san-juan-blue;
-    //   }
-    // }
-
-    // &__demo-button {
-    //   background-color: $dark-pink;
-    //   color: $water-white;
-    //   padding: rem(15) rem(30);
-    //   border-radius: rem(30);
-
-    //   &:hover {
-    //     color: $water-white;
-    //     background-color: $charm-pink;
-    //   }
-    // }
   }
 }
 @media screen and (min-width: rem(1024)) {
   .header {
     padding-inline: $desktop-padding-inline;
-
-    // &__navigation {
-    //   display: none;
-    // }
-    //  &__navigation.active {
-    //       display: block;
-    //       position: fixed;
-    //       top: 0;
-    //       left: 30%;
-    //       right: 0;
-    //       bottom: 0;
-    //       width: 70vw;
-    //       background-color: $midnight-green;
-    //       box-shadow: rgba(0, 37, 41, 0.595) 0px 8px 24px;
-    //       z-index: 1001;
-    //       transition: 0.2s;
-    //       overflow: hidden;
-    //       // @include back-image(
-    //       //   '../../assets/bg-pattern-about-1-mobile-nav-1.svg',
-    //       //   bottom right rem(-100)
-    //       // );
-    //     }
-
-    //         &__navigation.active ul {
-    //       padding-top: $desktop-padding-inline;
-    //       opacity: 1;
-    //     }
-
-    //     &__navigation ul {
-    //       flex-direction: column;
-    //       width: fit-content;
-    //       margin: 0 auto;
-    //       opacity: 0;
-    //     }
   }
 }
