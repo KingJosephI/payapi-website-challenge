@@ -19,6 +19,17 @@
 
     &:hover {
       cursor: pointer;
+      background-color: transparent;
+    }
+
+    &.close {
+      background-image: url('../../assets/shared/mobile/close.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      position: fixed;
+      top: rem(41);
+      right: rem(25);
+      z-index: 9999;
     }
   }
 
@@ -26,11 +37,90 @@
     width: 100%;
     display: none;
   }
+
+  &__menu {
+    display: flex;
+    gap: rem(40);
+    width: 100%;
+
+    li:last-child {
+      margin-left: auto;
+    }
+  }
+  &__link {
+    font-size: rem(15);
+    font-weight: 700;
+    color: $san-juan-blue-light;
+
+    &:hover {
+      color: $san-juan-blue;
+    }
+  }
+
+  &__demo-button {
+    background-color: $dark-pink;
+    color: $water-white;
+    padding: rem(15) rem(30);
+    border-radius: rem(30);
+
+    &:hover {
+      color: $water-white;
+      background-color: $charm-pink;
+    }
+  }
+
+  .active-link {
+    color: $dark-pink;
+  }
+
+  &__navigation.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 30%;
+    right: 0;
+    bottom: 0;
+    width: 70vw;
+    background-color: $mirage-blue;
+    box-shadow: rgba(0, 37, 41, 0.595) 0px 8px 24px;
+    z-index: 1001;
+    transition: 0.2s;
+    overflow: hidden;
+    background-image: url('../../assets/shared/desktop/bg-pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-position: top rem(-550) center;
+    // @include back-image(
+    //   '../../assets/bg-pattern-about-1-mobile-nav-1.svg',
+    //   bottom right rem(-100)
+    // );
+  }
+
+  &__navigation.active ul {
+    padding-top: $desktop-padding-inline;
+    opacity: 1;
+    text-align: center;
+  }
+
+  &__navigation.active &__link {
+    color: $san-juan-blue-light;
+
+    &:hover {
+      color: $water-white;
+    }
+  }
+
+  &__navigation ul {
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    opacity: 0;
+  }
 }
 
 @media screen and (min-width: rem(700)) {
   .header {
     padding-inline: $tablet-padding-inline;
+
     &__toggle-menu {
       display: none;
     }
@@ -39,42 +129,81 @@
     }
     &__navigation {
       display: flex;
+      display: block;
       width: 100%;
     }
-
+    .active {
+      display: none;
+    }
     &__menu {
-      display: flex;
-      gap: rem(40);
-      width: 100%;
+      flex-direction: row;
+      // display: flex;
+      // gap: rem(40);
+      // width: 100%;
 
-      li:last-child {
-        margin-left: auto;
-      }
+      // li:last-child {
+      //   margin-left: auto;
+      // }
     }
-    &__link {
-      font-size: rem(15);
-      font-weight: 700;
-      color: $san-juan-blue-light;
+    // &__link {
+    //   font-size: rem(15);
+    //   font-weight: 700;
+    //   color: $san-juan-blue-light;
 
-      &:hover {
-        color: $san-juan-blue;
-      }
-    }
-    &__demo-button {
-      background-color: $dark-pink;
-      color: $water-white;
-      padding: rem(15) rem(30);
-      border-radius: rem(30);
+    //   &:hover {
+    //     color: $san-juan-blue;
+    //   }
+    // }
 
-      &:hover {
-        color: $water-white;
-        background-color: $charm-pink;
-      }
-    }
+    // &__demo-button {
+    //   background-color: $dark-pink;
+    //   color: $water-white;
+    //   padding: rem(15) rem(30);
+    //   border-radius: rem(30);
+
+    //   &:hover {
+    //     color: $water-white;
+    //     background-color: $charm-pink;
+    //   }
+    // }
   }
 }
 @media screen and (min-width: rem(1024)) {
   .header {
     padding-inline: $desktop-padding-inline;
+
+    // &__navigation {
+    //   display: none;
+    // }
+    //  &__navigation.active {
+    //       display: block;
+    //       position: fixed;
+    //       top: 0;
+    //       left: 30%;
+    //       right: 0;
+    //       bottom: 0;
+    //       width: 70vw;
+    //       background-color: $midnight-green;
+    //       box-shadow: rgba(0, 37, 41, 0.595) 0px 8px 24px;
+    //       z-index: 1001;
+    //       transition: 0.2s;
+    //       overflow: hidden;
+    //       // @include back-image(
+    //       //   '../../assets/bg-pattern-about-1-mobile-nav-1.svg',
+    //       //   bottom right rem(-100)
+    //       // );
+    //     }
+
+    //         &__navigation.active ul {
+    //       padding-top: $desktop-padding-inline;
+    //       opacity: 1;
+    //     }
+
+    //     &__navigation ul {
+    //       flex-direction: column;
+    //       width: fit-content;
+    //       margin: 0 auto;
+    //       opacity: 0;
+    //     }
   }
 }
